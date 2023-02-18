@@ -1,411 +1,471 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--    <meta name="googlebot" content="notranslate">-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="WebStormTest. Автор: Кизим Ю.А."/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="WebStormTest. Автор: Кизим Ю.А." />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
     <title>Аренда автомобилей</title>
-</head>
+  </head>
 
-<body>
-<header class="header">
-    <div class="container header__container">
+  <body>
+    <header class="header">
+      <div class="container header__container">
         <div class="logo">
-            <a href="index.html">
-                <img src="images/logo.png" alt="Logo">
-            </a>
+          <a href="index.html">
+            <img src="images/logo.png" alt="Logo" />
+          </a>
         </div>
-
 
         <nav class="menu">
-            <ul class="menu__list">
-                <li class="menu__item">
-                    <a href="index.html">Главная</a>
-                </li>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="index.html">Главная</a>
+            </li>
 
-                <li class="menu__item">
-                    <a href="#cars">Автомобили</a>
-                </li>
+            <li class="menu__item">
+              <a href="#cars">Автомобили</a>
+            </li>
 
-                <li class="menu__item">
-                    <a href="#booking">Бронирование авто</a>
-                </li>
-            </ul>
+            <li class="menu__item">
+              <a href="#booking">Бронирование авто</a>
+            </li>
+          </ul>
         </nav>
-    </div>
+      </div>
+    </header>
 
-</header>
-
-<main class="main">
-    <section class="hero">
+    <main class="main">
+      <section class="hero">
         <div class="container">
+          <div class="hero__info">
+            <h1 class="hero__title">Аренда премиальных автомобилей</h1>
 
-            <div class="hero__info">
-                <h1 class="hero__title">Аренда премиальных автомобилей</h1>
+            <p class="hero__text">
+              В нашем клубе имеется солидная коллекция спортивных автомобилей — от достаточно
+              распространенных серийных машин до настоящего гоночного эксклюзива. Воспользуйтесь
+              уникальной возможностью побывать за рулем настоящей легенды и узнать, на что она
+              способна за пределами гоночной трассы!
+            </p>
 
-                <p class="hero__text">
-                    В нашем клубе имеется солидная коллекция спортивных автомобилей — от достаточно распространенных
-                    серийных машин до настоящего гоночного эксклюзива. Воспользуйтесь уникальной возможностью побывать
-                    за рулем настоящей легенды и узнать, на что она способна за пределами гоночной трассы!
-                </p>
-
-                <button class="button button-cars" type="button">Посмотреть автомобили</button>
-            </div>
-
+            <button class="button button-cars" type="button">Посмотреть автомобили</button>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section class="cars" id="cars">
+      <section class="cars" id="cars">
         <div class="container">
-            <h2 class="sub-title">Наш автопарк</h2>
+          <h2 class="sub-title">Наш автопарк</h2>
 
-            <ul class="cars__list">
-                <li class="cars__item">
-                    <div class="img-thumb">
-                        <img src="./images/1.png" alt="Lamborghini Huracan Spyder" width="384" height="246">
-                    </div>
+          <ul class="cars__list">
+            <li class="cars__item">
+              <div class="img-thumb">
+                <img
+                  src="./images/1.png"
+                  alt="Lamborghini Huracan Spyder"
+                  width="384"
+                  height="246"
+                />
+              </div>
 
-                    <div class="cars__info">
-                        <h3 class="car-title">Lamborghini Huracan Spyder</h3>
-                        <ul class="car-list">
-                            <li class="car-item">
-                                <img src="./images/transmission.png" alt="Transmission" width="34" height="34">
-                                <p class="car-item__text-title">Коробка</p>
-                                <p class="car-item__text">автомат</p>
-                            </li>
+              <div class="cars__info">
+                <h3 class="car-title">Lamborghini Huracan Spyder</h3>
+                <ul class="car-list">
+                  <li class="car-item">
+                    <img
+                      src="./images/transmission.png"
+                      alt="Transmission"
+                      width="34"
+                      height="34"
+                    />
+                    <p class="car-item__text-title">Коробка</p>
+                    <p class="car-item__text">автомат</p>
+                  </li>
 
-                            <li class="car-item">
-                                <!--                                <svg width="34" height="34" aria-label="Gear">-->
-                                <!--                                    <use href="./images/icon.svg#icon-wheel"></use>-->
-                                <!--                                </svg>-->
-                                <img src="./images/wheel.png" alt="Transmission" width="34" height="34">
-                                <p class="car-item__text-title">Двигатель</p>
-                                <p class="car-item__text">5.2 л.с.</p>
-                            </li>
+                  <li class="car-item">
+                    <!--                                <svg width="34" height="34" aria-label="Gear">-->
+                    <!--                                    <use href="./images/icon.svg#icon-wheel"></use>-->
+                    <!--                                </svg>-->
+                    <img src="./images/wheel.png" alt="Transmission" width="34" height="34" />
+                    <p class="car-item__text-title">Двигатель</p>
+                    <p class="car-item__text">5.2 л.с.</p>
+                  </li>
 
-                            <li class="car-item">
-                                <img src="./images/year.png" alt="Year" width="34" height="34">
-                                <p class="car-item__text-title">Год выпуска</p>
-                                <p class="car-item__text">2019</p>
-                            </li>
-                        </ul>
-                        <button class="button car-button">Забронировать</button>
-                    </div>
-                </li>
+                  <li class="car-item">
+                    <img src="./images/year.png" alt="Year" width="34" height="34" />
+                    <p class="car-item__text-title">Год выпуска</p>
+                    <p class="car-item__text">2019</p>
+                  </li>
+                </ul>
+                <button class="button car-button">Забронировать</button>
+              </div>
+            </li>
 
-                <li class="cars__item">
-                    <div class="img-thumb">
-                        <img src="./images/2.png" alt="Chevrolet Corvette" width="384" height="246">
-                    </div>
+            <li class="cars__item">
+              <div class="img-thumb">
+                <img src="./images/2.png" alt="Chevrolet Corvette" width="384" height="246" />
+              </div>
 
-                    <div class="cars__info">
-                        <h3 class="car-title">Chevrolet Corvette</h3>
-                        <ul class="car-list">
-                            <li class="car-item">
-                                <img src="./images/transmission.png" alt="Transmission" width="34" height="34">
-                                <p class="car-item__text-title">Коробка</p>
-                                <p class="car-item__text">автомат</p>
-                            </li>
+              <div class="cars__info">
+                <h3 class="car-title">Chevrolet Corvette</h3>
+                <ul class="car-list">
+                  <li class="car-item">
+                    <img
+                      src="./images/transmission.png"
+                      alt="Transmission"
+                      width="34"
+                      height="34"
+                    />
+                    <p class="car-item__text-title">Коробка</p>
+                    <p class="car-item__text">автомат</p>
+                  </li>
 
-                            <li class="car-item">
-                                <!--                                <svg width="34" height="34" aria-label="Gear">-->
-                                <!--                                    <use href="./images/icon.svg#icon-wheel"></use>-->
-                                <!--                                </svg>-->
-                                <img src="./images/wheel.png" alt="Transmission" width="34" height="34">
-                                <p class="car-item__text-title">Двигатель</p>
-                                <p class="car-item__text">6.2 л.с.</p>
-                            </li>
+                  <li class="car-item">
+                    <!--                                <svg width="34" height="34" aria-label="Gear">-->
+                    <!--                                    <use href="./images/icon.svg#icon-wheel"></use>-->
+                    <!--                                </svg>-->
+                    <img src="./images/wheel.png" alt="Transmission" width="34" height="34" />
+                    <p class="car-item__text-title">Двигатель</p>
+                    <p class="car-item__text">6.2 л.с.</p>
+                  </li>
 
-                            <li class="car-item">
-                                <img src="./images/year.png" alt="Year" width="34" height="34">
-                                <p class="car-item__text-title">Год выпуска</p>
-                                <p class="car-item__text">2017</p>
-                            </li>
-                        </ul>
-                        <button class="button car-button">Забронировать</button>
-                    </div>
-                </li>
+                  <li class="car-item">
+                    <img src="./images/year.png" alt="Year" width="34" height="34" />
+                    <p class="car-item__text-title">Год выпуска</p>
+                    <p class="car-item__text">2017</p>
+                  </li>
+                </ul>
+                <button class="button car-button">Забронировать</button>
+              </div>
+            </li>
 
-                <li class="cars__item">
-                    <div class="img-thumb">
-                        <img src="./images/3.png" alt="Ferrari California" width="384" height="246">
-                    </div>
+            <li class="cars__item">
+              <div class="img-thumb">
+                <img src="./images/3.png" alt="Ferrari California" width="384" height="246" />
+              </div>
 
-                    <div class="cars__info">
-                        <h3 class="car-title">Ferrari California</h3>
-                        <ul class="car-list">
-                            <li class="car-item">
-                                <img src="./images/transmission.png" alt="Transmission" width="34" height="34">
-                                <p class="car-item__text-title">Коробка</p>
-                                <p class="car-item__text">автомат</p>
-                            </li>
+              <div class="cars__info">
+                <h3 class="car-title">Ferrari California</h3>
+                <ul class="car-list">
+                  <li class="car-item">
+                    <img
+                      src="./images/transmission.png"
+                      alt="Transmission"
+                      width="34"
+                      height="34"
+                    />
+                    <p class="car-item__text-title">Коробка</p>
+                    <p class="car-item__text">автомат</p>
+                  </li>
 
-                            <li class="car-item">
-                                <!--                                <svg width="34" height="34" aria-label="Gear">-->
-                                <!--                                    <use href="./images/icon.svg#icon-wheel"></use>-->
-                                <!--                                </svg>-->
-                                <img src="./images/wheel.png" alt="Transmission" width="34" height="34">
-                                <p class="car-item__text-title">Двигатель</p>
-                                <p class="car-item__text">3.9 л.с.</p>
-                            </li>
+                  <li class="car-item">
+                    <!--                                <svg width="34" height="34" aria-label="Gear">-->
+                    <!--                                    <use href="./images/icon.svg#icon-wheel"></use>-->
+                    <!--                                </svg>-->
+                    <img src="./images/wheel.png" alt="Transmission" width="34" height="34" />
+                    <p class="car-item__text-title">Двигатель</p>
+                    <p class="car-item__text">3.9 л.с.</p>
+                  </li>
 
-                            <li class="car-item">
-                                <img src="./images/year.png" alt="Year" width="34" height="34">
-                                <p class="car-item__text-title">Год выпуска</p>
-                                <p class="car-item__text">2010</p>
-                        </ul>
-                        <button class="button car-button">Забронировать</button>
-                    </div>
-                </li>
+                  <li class="car-item">
+                    <img src="./images/year.png" alt="Year" width="34" height="34" />
+                    <p class="car-item__text-title">Год выпуска</p>
+                    <p class="car-item__text">2010</p>
+                  </li>
+                </ul>
 
-                <li class="cars__item">
-                    <div class="img-thumb">
-                        <img src="./images/4.png" alt="Lamborghini Urus" width="384" height="246">
-                    </div>
+                <button class="button car-button">Забронировать</button>
+              </div>
+            </li>
 
-                    <div class="cars__info">
-                        <h3 class="car-title">Lamborghini Urus</h3>
-                        <ul class="car-list">
-                            <li class="car-item">
-                                <img src="./images/transmission.png" alt="Transmission" width="34" height="34">
-                                <p class="car-item__text-title">Коробка</p>
-                                <p class="car-item__text">автомат</p>
-                            </li>
+            <li class="cars__item">
+              <div class="img-thumb">
+                <img src="./images/4.png" alt="Lamborghini Urus" width="384" height="246" />
+              </div>
 
-                            <li class="car-item">
-                                <!--                                <svg width="34" height="34" aria-label="Gear">-->
-                                <!--                                    <use href="./images/icon.svg#icon-wheel"></use>-->
-                                <!--                                </svg>-->
-                                <img src="./images/wheel.png" alt="Transmission" width="34" height="34">
-                                <p class="car-item__text-title">Двигатель</p>
-                                <p class="car-item__text">4.0 л.с.</p>
-                            </li>
+              <div class="cars__info">
+                <h3 class="car-title">Lamborghini Urus</h3>
+                <ul class="car-list">
+                  <li class="car-item">
+                    <img
+                      src="./images/transmission.png"
+                      alt="Transmission"
+                      width="34"
+                      height="34"
+                    />
+                    <p class="car-item__text-title">Коробка</p>
+                    <p class="car-item__text">автомат</p>
+                  </li>
 
-                            <li class="car-item">
-                                <img src="./images/year.png" alt="Year" width="34" height="34">
-                                <p class="car-item__text-title">Год выпуска</p>
-                                <p class="car-item__text">2019</p>
-                            </li>
-                        </ul>
-                        <button class="button car-button">Забронировать</button>
-                    </div>
-                </li>
+                  <li class="car-item">
+                    <!--                                <svg width="34" height="34" aria-label="Gear">-->
+                    <!--                                    <use href="./images/icon.svg#icon-wheel"></use>-->
+                    <!--                                </svg>-->
+                    <img src="./images/wheel.png" alt="Transmission" width="34" height="34" />
+                    <p class="car-item__text-title">Двигатель</p>
+                    <p class="car-item__text">4.0 л.с.</p>
+                  </li>
 
-                <li class="cars__item">
-                    <div class="img-thumb">
-                        <img src="./images/5.png" alt="Audi R8" width="384" height="246">
-                    </div>
+                  <li class="car-item">
+                    <img src="./images/year.png" alt="Year" width="34" height="34" />
+                    <p class="car-item__text-title">Год выпуска</p>
+                    <p class="car-item__text">2019</p>
+                  </li>
+                </ul>
+                <button class="button car-button">Забронировать</button>
+              </div>
+            </li>
 
-                    <div class="cars__info">
-                        <h3 class="car-title">Audi R8</h3>
-                        <ul class="car-list">
-                            <li class="car-item">
-                                <img src="./images/transmission.png" alt="Transmission" width="34" height="34">
-                                <p class="car-item__text-title">Коробка</p>
-                                <p class="car-item__text">автомат</p>
-                            </li>
+            <li class="cars__item">
+              <div class="img-thumb">
+                <img src="./images/5.png" alt="Audi R8" width="384" height="246" />
+              </div>
 
-                            <li class="car-item">
-                                <!--                                <svg width="34" height="34" aria-label="Gear">-->
-                                <!--                                    <use href="./images/icon.svg#icon-wheel"></use>-->
-                                <!--                                </svg>-->
-                                <img src="./images/wheel.png" alt="Transmission" width="34" height="34">
-                                <p class="car-item__text-title">Двигатель</p>
-                                <p class="car-item__text">5.2 л.с.</p>
-                            </li>
+              <div class="cars__info">
+                <h3 class="car-title">Audi R8</h3>
+                <ul class="car-list">
+                  <li class="car-item">
+                    <img
+                      src="./images/transmission.png"
+                      alt="Transmission"
+                      width="34"
+                      height="34"
+                    />
+                    <p class="car-item__text-title">Коробка</p>
+                    <p class="car-item__text">автомат</p>
+                  </li>
 
-                            <li class="car-item">
-                                <img src="./images/year.png" alt="Year" width="34" height="34">
-                                <p class="car-item__text-title">Год выпуска</p>
-                                <p class="car-item__text">2018</p>
-                            </li>
-                        </ul>
-                        <button class="button car-button">Забронировать</button>
-                    </div>
-                </li>
+                  <li class="car-item">
+                    <!--                                <svg width="34" height="34" aria-label="Gear">-->
+                    <!--                                    <use href="./images/icon.svg#icon-wheel"></use>-->
+                    <!--                                </svg>-->
+                    <img src="./images/wheel.png" alt="Transmission" width="34" height="34" />
+                    <p class="car-item__text-title">Двигатель</p>
+                    <p class="car-item__text">5.2 л.с.</p>
+                  </li>
 
-                <li class="cars__item">
-                    <div class="img-thumb">
-                        <img src="./images/6.png" alt="Chevrolet Camaro" width="384" height="246">
-                    </div>
+                  <li class="car-item">
+                    <img src="./images/year.png" alt="Year" width="34" height="34" />
+                    <p class="car-item__text-title">Год выпуска</p>
+                    <p class="car-item__text">2018</p>
+                  </li>
+                </ul>
+                <button class="button car-button">Забронировать</button>
+              </div>
+            </li>
 
-                    <div class="cars__info">
-                        <h3 class="car-title">Chevrolet Camaro</h3>
-                        <ul class="car-list">
-                            <li class="car-item">
-                                <img src="./images/transmission.png" alt="Transmission" width="34" height="34">
-                                <p class="car-item__text-title">Коробка</p>
-                                <p class="car-item__text">автомат</p>
-                            </li>
+            <li class="cars__item">
+              <div class="img-thumb">
+                <img src="./images/6.png" alt="Chevrolet Camaro" width="384" height="246" />
+              </div>
 
-                            <li class="car-item">
-                                <!--                                <svg width="34" height="34" aria-label="Gear">-->
-                                <!--                                    <use href="./images/icon.svg#icon-wheel"></use>-->
-                                <!--                                </svg>-->
-                                <img src="./images/wheel.png" alt="Transmission" width="34" height="34">
-                                <p class="car-item__text-title">Двигатель</p>
-                                <p class="car-item__text">2.0 л.с.</p>
-                            </li>
+              <div class="cars__info">
+                <h3 class="car-title">Chevrolet Camaro</h3>
+                <ul class="car-list">
+                  <li class="car-item">
+                    <img
+                      src="./images/transmission.png"
+                      alt="Transmission"
+                      width="34"
+                      height="34"
+                    />
+                    <p class="car-item__text-title">Коробка</p>
+                    <p class="car-item__text">автомат</p>
+                  </li>
 
-                            <li class="car-item">
-                                <img src="./images/year.png" alt="Year" width="34" height="34">
-                                <p class="car-item__text-title">Год выпуска</p>
-                                <p class="car-item__text">2019</p>
-                            </li>
-                        </ul>
-                        <button class="button car-button">Забронировать</button>
-                    </div>
-                </li>
+                  <li class="car-item">
+                    <!--                                <svg width="34" height="34" aria-label="Gear">-->
+                    <!--                                    <use href="./images/icon.svg#icon-wheel"></use>-->
+                    <!--                                </svg>-->
+                    <img src="./images/wheel.png" alt="Transmission" width="34" height="34" />
+                    <p class="car-item__text-title">Двигатель</p>
+                    <p class="car-item__text">2.0 л.с.</p>
+                  </li>
 
-                <li class="cars__item">
-                    <div class="img-thumb">
-                        <img src="./images/7.png" alt="Maserati Quattroporte" width="384" height="246">
-                    </div>
+                  <li class="car-item">
+                    <img src="./images/year.png" alt="Year" width="34" height="34" />
+                    <p class="car-item__text-title">Год выпуска</p>
+                    <p class="car-item__text">2019</p>
+                  </li>
+                </ul>
+                <button class="button car-button">Забронировать</button>
+              </div>
+            </li>
 
-                    <div class="cars__info">
-                        <h3 class="car-title">Maserati Quattroporte</h3>
-                        <ul class="car-list">
-                            <li class="car-item">
-                                <img src="./images/transmission.png" alt="Transmission" width="34" height="34">
-                                <p class="car-item__text-title">Коробка</p>
-                                <p class="car-item__text">автомат</p>
-                            </li>
+            <li class="cars__item">
+              <div class="img-thumb">
+                <img src="./images/7.png" alt="Maserati Quattroporte" width="384" height="246" />
+              </div>
 
-                            <li class="car-item">
-                                <!--                                <svg width="34" height="34" aria-label="Gear">-->
-                                <!--                                    <use href="./images/icon.svg#icon-wheel"></use>-->
-                                <!--                                </svg>-->
-                                <img src="./images/wheel.png" alt="Transmission" width="34" height="34">
-                                <p class="car-item__text-title">Двигатель</p>
-                                <p class="car-item__text">3.0 л.с.</p>
-                            </li>
+              <div class="cars__info">
+                <h3 class="car-title">Maserati Quattroporte</h3>
+                <ul class="car-list">
+                  <li class="car-item">
+                    <img
+                      src="./images/transmission.png"
+                      alt="Transmission"
+                      width="34"
+                      height="34"
+                    />
+                    <p class="car-item__text-title">Коробка</p>
+                    <p class="car-item__text">автомат</p>
+                  </li>
 
-                            <li class="car-item">
-                                <img src="./images/year.png" alt="Year" width="34" height="34">
-                                <p class="car-item__text-title">Год выпуска</p>
-                                <p class="car-item__text">2018</p>
-                            </li>
-                        </ul>
-                        <button class="button car-button">Забронировать</button>
-                    </div>
-                </li>
+                  <li class="car-item">
+                    <!--                                <svg width="34" height="34" aria-label="Gear">-->
+                    <!--                                    <use href="./images/icon.svg#icon-wheel"></use>-->
+                    <!--                                </svg>-->
+                    <img src="./images/wheel.png" alt="Transmission" width="34" height="34" />
+                    <p class="car-item__text-title">Двигатель</p>
+                    <p class="car-item__text">3.0 л.с.</p>
+                  </li>
 
-                <li class="cars__item">
-                    <div class="img-thumb">
-                        <img src="./images/8.png" alt="Dodge Challenger" width="384" height="246">
-                    </div>
+                  <li class="car-item">
+                    <img src="./images/year.png" alt="Year" width="34" height="34" />
+                    <p class="car-item__text-title">Год выпуска</p>
+                    <p class="car-item__text">2018</p>
+                  </li>
+                </ul>
+                <button class="button car-button">Забронировать</button>
+              </div>
+            </li>
 
-                    <div class="cars__info">
-                        <h3 class="car-title">Dodge Challenger</h3>
-                        <ul class="car-list">
-                            <li class="car-item">
-                                <img src="./images/transmission.png" alt="Transmission" width="34" height="34">
-                                <p class="car-item__text-title">Коробка</p>
-                                <p class="car-item__text">автомат</p>
-                            </li>
+            <li class="cars__item">
+              <div class="img-thumb">
+                <img
+                  class="img-car"
+                  src="./images/8.png"
+                  alt="Dodge Challenger"
+                  width="384"
+                  height="246"
+                />
+              </div>
 
-                            <li class="car-item">
-                                <!--                                <svg width="34" height="34" aria-label="Gear">-->
-                                <!--                                    <use href="./images/icon.svg#icon-wheel"></use>-->
-                                <!--                                </svg>-->
-                                <img src="./images/wheel.png" alt="Transmission" width="34" height="34">
-                                <p class="car-item__text-title">Двигатель</p>
-                                <p class="car-item__text">6.4 л.с.</p>
-                            </li>
+              <div class="cars__info">
+                <h3 class="car-title">Dodge Challenger</h3>
+                <ul class="car-list">
+                  <li class="car-item">
+                    <img
+                      src="./images/transmission.png"
+                      alt="Transmission"
+                      width="34"
+                      height="34"
+                    />
+                    <p class="car-item__text-title">Коробка</p>
+                    <p class="car-item__text">автомат</p>
+                  </li>
 
-                            <li class="car-item">
-                                <img src="./images/year.png" alt="Year" width="34" height="34">
-                                <p class="car-item__text-title">Год выпуска</p>
-                                <p class="car-item__text">2019</p>
-                            </li>
-                        </ul>
-                        <button class="button car-button">Забронировать</button>
-                    </div>
-                </li>
+                  <li class="car-item">
+                    <!--                                <svg width="34" height="34" aria-label="Gear">-->
+                    <!--                                    <use href="./images/icon.svg#icon-wheel"></use>-->
+                    <!--                                </svg>-->
+                    <img src="./images/wheel.png" alt="Transmission" width="34" height="34" />
+                    <p class="car-item__text-title">Двигатель</p>
+                    <p class="car-item__text">6.4 л.с.</p>
+                  </li>
 
-                <li class="cars__item">
-                    <div class="img-thumb">
-                        <img src="./images/9.png" alt="Nissan GT-R" width="384" height="246">
-                    </div>
+                  <li class="car-item">
+                    <img src="./images/year.png" alt="Year" width="34" height="34" />
+                    <p class="car-item__text-title">Год выпуска</p>
+                    <p class="car-item__text">2019</p>
+                  </li>
+                </ul>
+                <button class="button car-button">Забронировать</button>
+              </div>
+            </li>
 
-                    <div class="cars__info">
-                        <h3 class="car-title">Nissan GT-R</h3>
-                        <ul class="car-list">
-                            <li class="car-item">
-                                <img src="./images/transmission.png" alt="Transmission" width="34" height="34">
-                                <p class="car-item__text-title">Коробка</p>
-                                <p class="car-item__text">автомат</p>
-                            </li>
+            <li class="cars__item">
+              <div class="img-thumb">
+                <img src="./images/9.png" alt="Nissan GT-R" width="384" height="246" />
+              </div>
 
-                            <li class="car-item">
-                                <!--                                <svg width="34" height="34" aria-label="Gear">-->
-                                <!--                                    <use href="./images/icon.svg#icon-wheel"></use>-->
-                                <!--                                </svg>-->
-                                <img src="./images/wheel.png" alt="Transmission" width="34" height="34">
-                                <p class="car-item__text-title">Двигатель</p>
-                                <p class="car-item__text">3.8 л.с.</p>
-                            </li>
+              <div class="cars__info">
+                <h3 class="car-title">Nissan GT-R</h3>
+                <ul class="car-list">
+                  <li class="car-item">
+                    <img
+                      src="./images/transmission.png"
+                      alt="Transmission"
+                      width="34"
+                      height="34"
+                    />
+                    <p class="car-item__text-title">Коробка</p>
+                    <p class="car-item__text">автомат</p>
+                  </li>
 
-                            <li class="car-item">
-                                <img src="./images/year.png" alt="Year" width="34" height="34">
-                                <p class="car-item__text-title">Год выпуска</p>
-                                <p class="car-item__text">2019</p>
-                            </li>
-                        </ul>
-                        <button class="button car-button">Забронировать</button>
-                    </div>
-                </li>
-            </ul>
+                  <li class="car-item">
+                    <!--                                <svg width="34" height="34" aria-label="Gear">-->
+                    <!--                                    <use href="./images/icon.svg#icon-wheel"></use>-->
+                    <!--                                </svg>-->
+                    <img src="./images/wheel.png" alt="Transmission" width="34" height="34" />
+                    <p class="car-item__text-title">Двигатель</p>
+                    <p class="car-item__text">3.8 л.с.</p>
+                  </li>
 
+                  <li class="car-item">
+                    <img src="./images/year.png" alt="Year" width="34" height="34" />
+                    <p class="car-item__text-title">Год выпуска</p>
+                    <p class="car-item__text">2019</p>
+                  </li>
+                </ul>
+                <button class="button car-button">Забронировать</button>
+              </div>
+            </li>
+          </ul>
         </div>
-    </section>
+      </section>
 
-    <section class="price" id="booking">
+      <section class="price" id="booking">
         <div class="container">
-            <h2 class="sub-title sub-title__price">Узнать цену и забронировать</h2>
-            <p class="price__text">Заполните данные, и мы перезвоним вам для уточнения всех деталей бронирования</p>
+          <h2 class="sub-title sub-title__price">Узнать цену и забронировать</h2>
+          <p class="price__text">
+            Заполните данные, и мы перезвоним вам для уточнения всех деталей бронирования
+          </p>
 
-            <div class="booking">
-                <form class="form">
-                    <label>
-                        <input class="form__input" placeholder="Ваше имя" type="text" name="name">
-                    </label>
-                    <label>
-                        <input class="form__input" placeholder="Ваш телефон" type="text" name="phone">
-                    </label>
-                    <label>
-                        <input class="form__input" placeholder="Автомобиль, который вас интересует" type="text"
-                               name="car">
-                    </label>
+          <div class="booking">
+            <form class="form">
+              <label>
+                <input class="form__input" placeholder="Ваше имя" type="text" name="name" />
+              </label>
+              <label>
+                <input class="form__input" placeholder="Ваш телефон" type="text" name="phone" />
+              </label>
+              <label>
+                <input
+                  class="form__input"
+                  placeholder="Автомобиль, который вас интересует"
+                  type="text"
+                  name="car"
+                />
+              </label>
 
+              <button class="button button-submit" type="submit">Отправить запрос</button>
+            </form>
 
-                    <button class="button button-submit" type="submit">Отправить запрос</button>
-                </form>
-
-                <img class="price__img" src="./images/rolls.png" alt="Rolls" width="969" height="506"></div>
-
+            <img class="price__img" src="./images/rolls.png" alt="Rolls" width="969" height="506" />
+          </div>
         </div>
-    </section>
+      </section>
+    </main>
 
-</main>
-
-<footer class="footer">
-    <div class="container">
+    <footer class="footer">
+      <div class="container">
         <div class="logo">
-            <a href="index.html">
-                <img src="images/logo.png" alt="Logo">
-            </a>
+          <a href="index.html">
+            <img src="images/logo.png" alt="Logo" />
+          </a>
         </div>
         <p class="rights">Все права защищены</p>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<script src="styles.js" type="module"></script>
-<script src="buttun.js" type="module"></script>
-
-</body>
+    <script src="styles.js" type="module"></script>
+    <script src="buttun.js" type="module"></script>
+  </body>
 </html>
